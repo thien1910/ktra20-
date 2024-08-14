@@ -12,3 +12,4 @@ public interface ICategoryService {
     Category updateCategory(long categoryId, CategoryDTO category);
     void deleteCategory(long id);
 }
+

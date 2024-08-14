@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad5375c8-716d-4e62-be49-2547c9e5e972" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/responses/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/responses/ProductListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/responses/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/WebShopappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/WebShopappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/OrderDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/ProductControllers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/OrderdetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/OrderDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/ProductImageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/ProductImageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/dtos/UserLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/exceptions/DataNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/exceptions/DataNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/SocialAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/SocialAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/OrderDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/OrderDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/ProductImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/ProductImageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2jxIrWevXd9oafBAcnhYlhCDnT5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NGUYEN VAN THIEN/Downloads/shopapp-backend02/shopapp-backend&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.project.web_shopapp.controllers" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad5375c8-716d-4e62-be49-2547c9e5e972" name="Changes" comment="" />
+      <created>1722322500776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722322500776</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/project/web_shopapp/services/ProductService.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

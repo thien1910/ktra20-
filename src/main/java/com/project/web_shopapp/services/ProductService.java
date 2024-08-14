@@ -1,5 +1,4 @@
 package com.project.web_shopapp.services;
-
 import com.project.web_shopapp.dtos.ProductDTO;
 import com.project.web_shopapp.dtos.ProductImageDTO;
 import com.project.web_shopapp.exceptions.DataNotFoundException;
@@ -10,6 +9,7 @@ import com.project.web_shopapp.models.ProductImage;
 import com.project.web_shopapp.repositories.CategoryRepository;
 import com.project.web_shopapp.repositories.ProductImageRepository;
 import com.project.web_shopapp.repositories.ProductRepository;
+import com.project.web_shopapp.responses.ProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -35,6 +35,7 @@ public class ProductService implements IProductService{
                 .name(productDTO.getName())
                 .price(productDTO.getPrice())
                 .thumbnail(productDTO.getThumbnail())
+                .description(productDTO.getDescription())
                 .category(existingCategory)
                 .build();
         return productRepository.save(newProduct);
@@ -48,9 +49,20 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public Page<Product> getAllProducts(PageRequest pageRequest) {
+    public Page<ProductResponse> getAllProducts(PageRequest pageRequest) {
         // Lấy danh sách sản phẩm theo trang(page) và giới hạn(limit)
-        return productRepository.findAll(pageRequest);
+        return productRepository.findAll(pageRequest).map(product -> {
+                ProductResponse productResponse = ProductResponse.builder()
+                .name(product.getName())
+                .price(product.getPrice())
+                .thumbnail(product.getThumbnail())
+                .description(product.getDescription())
+                .categoryId(product.getCategory().getId())
+                .build();
+                productResponse.setCreatedAt(product.getCreatedAt());
+                productResponse.setUpdatedAt(product.getUpdatedAt());
+                return productResponse;
+        });
     }
 
     @Override
@@ -112,4 +124,3 @@ public class ProductService implements IProductService{
         return productImageRepository.save(newProductImage);
     }
 }
-

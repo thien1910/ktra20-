@@ -11,12 +11,13 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class CategoryService implements ICategoryService{
+public class CategoryService implements ICategoryService {
     private final CategoryRepository categoryRepository;
     @Override
-    public Category createCategory(CategoryDTO category) {
-        Category newCategory = Category.builder()
-                .name(category.getName())
+    public Category createCategory(CategoryDTO categoryDTO) {
+        Category newCategory = Category
+                .builder()
+                .name(categoryDTO.getName())
                 .build();
         return categoryRepository.save(newCategory);
     }
@@ -43,7 +44,7 @@ public class CategoryService implements ICategoryService{
 
     @Override
     public void deleteCategory(long id) {
-// xoa cứng => xóa xong mất luôn
+        //xóa xong
         categoryRepository.deleteById(id);
     }
 }

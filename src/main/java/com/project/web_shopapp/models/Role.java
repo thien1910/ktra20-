@@ -1,19 +1,22 @@
 package com.project.web_shopapp.models;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Table(name= "roles")
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "roles")
 @Getter
 @Setter
-@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "full_name",nullable = false)
-    private String fullName;
+
+    @Column(name = "name", nullable = false)
+    private String name;
 }

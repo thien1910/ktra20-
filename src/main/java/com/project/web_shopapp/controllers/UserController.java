@@ -3,7 +3,6 @@ package com.project.web_shopapp.controllers;
 import com.project.web_shopapp.services.IUserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -23,7 +22,8 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<?> createUser(
             @Valid @RequestBody UserDTO userDTO,
-            BindingResult result) {
+            BindingResult result
+    ) {
         try{
             if(result.hasErrors()) {
                 List<String> errorMessages = result.getFieldErrors()
@@ -32,21 +32,25 @@ public class UserController {
                         .toList();
                 return ResponseEntity.badRequest().body(errorMessages);
             }
-            if (!userDTO.getPassword().equals(userDTO.getRetypePassword())){
-                return ResponseEntity.badRequest().body("Password dose not match");
+            if(!userDTO.getPassword().equals(userDTO.getRetypePassword())){
+                return ResponseEntity.badRequest().body("Password does not match");
             }
             userService.createUser(userDTO);
             return ResponseEntity.ok("Register successfully");
-        } catch (Exception e){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }  catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
     @PostMapping("/login")
     public ResponseEntity<String> login(
             @Valid @RequestBody UserLoginDTO userLoginDTO) {
-        // kiem tra thong tin dang nhap va sinh token
+        // Kiểm tra thông tin đăng nhập và sinh token
         String token = userService.login(userLoginDTO.getPhoneNumber(), userLoginDTO.getPassword());
-        // tra ve token trong response
+        // Trả về token trong response
         return ResponseEntity.ok(token);
     }
 }
+
+ 
+
+//  user {json } => "api/v1/dfdf"/ => data => database 
